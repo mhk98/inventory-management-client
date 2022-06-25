@@ -12,12 +12,14 @@ import SignUp from './Pages/Login/SignUp';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import UpdateComputer from './Products/UpdateComputer';
 import UpdateCloth from './Products/UpdateCloth';
+import Home from './Home/Home';
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
       <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/computer' element={<Computers></Computers>}></Route>
